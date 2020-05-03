@@ -44,3 +44,6 @@ One large challenge that we encountered was with creating a measure of efficienc
 Moving forward, our Binary Search algorithm can be applied and optimized for any given city. In our provided code, one only needs to change the infection rate to find a new optimized pooled testing size. The new pooled testing size is ideal for our Binary Search algorithm and minimizes the number of tests needed for a specific community. Against NYC alone, our Binary Search Algorithm found that people should be tested in groups of around 31 - and it only needed 859 tests for 5000 random NYC residents. Compared to the usual 5000 tests needed, this is a breakthrough in the speed of testing for COVID-19. Our algorithm’s accuracy can also be increased by changing the population size, and individual sample size parameters - and it can be applied to almost any location.
 
 We hope that our algorithm can be applied to many COVID-19 impacted communities and that it can be used to rapidly test people in order to mitigate the spread of COVID-19.
+
+## How to Use the Code
+Simply clone  this GitHub repository. The entry file is `script.py`, which can be run using either a virtual environment (which we have as a folder ./env), as a docker environment (in .devcontainer), or locally using requirements.txt.
