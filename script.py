@@ -19,7 +19,7 @@ population_size = 5000
 # The number of samples with the size of the population that are desired to be ran. Changing this number affects the number of samples run for each
 # individual sample size. Ex. 500 means that for any given sample size being evaluated, 500 arrays with population size 5000 will be evaluated for
 # every possible sample size between 1 and the starting sample.
-individual_sample_size = 500
+num_samples = 500
 
 
 # Initialize the best_sample_sizes class to store the best testing averages for each algorithm
@@ -27,10 +27,10 @@ best_sample_sizes = BestSampleSizes(starting_sample)
 
 # Loop through every possible sample size between 1 and our target starting_sample
 for sample_size in range(1, starting_sample):
-  print("Evaluating ", individual_sample_size, " samples of ", population_size, " people tested in groups of ", sample_size, " for the linear/linear-pool/binary-pool algos")
+  print("Evaluating ", num_samples, " samples of ", population_size, " people tested in groups of ", sample_size, " for the linear/linear-pool/binary-pool algos")
 
   # Create the samples that will be used for the given sample size
-  samples = np.random.binomial(population_size, infection_rate, individual_sample_size)
+  samples = np.random.binomial(population_size, infection_rate, num_samples)
 
   num_tests = len(samples)
 
@@ -79,13 +79,13 @@ random_sample = np.random.binomial(population_size, infection_rate, 1)
 population = produce_population(random_sample[0], population_size)
 
 # Test each algorithm on the random sample to see how many tests they use
-linear_tests = num_tests_used(patient_samples, sample_size, "linear")
-linear_pooled_tests = num_tests_used(patient_samples, sample_size, "linear_pool")
-binary_pooled_tests = num_tests_used(patient_samples, sample_size, "binary_pool")
+linear_tests = num_tests_used(population, sample_size, "linear")
+linear_pooled_tests = num_tests_used(population, sample_size, "linear_pool")
+binary_pooled_tests = num_tests_used(population, sample_size, "binary_pool")
 
 # Print the findings of testing the algorithms on a random algorithm
 print("")
-print("In a random population of 5000 people with the provided infection rate: ")
+print("In a random population of ", population_size, "people with the provided infection rate: ")
 print("Testing patients linearly in groups of ", best_linear_sample_size, " takes ", linear_tests, " tests.")
 print("Testing patients using linear pooling in groups of ", best_linear_pool_sample_size, " takes ", linear_pooled_tests, " tests.")
 print("Testing patients using binary pooling in groups of ", best_binary_pool_sample_size, " takes ", binary_pooled_tests, " tests.")
