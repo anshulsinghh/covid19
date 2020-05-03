@@ -37,7 +37,7 @@ By using .018 as our probability and looking for 1 success, we find that this co
 We perform a loop of simulations of pool size 1 to 55 to find which of these pool sizes will account for low percentages of 2 people with COVID19. Our simulations will average each pool size’s used tests and give us the pool size that used the least. This result will be the most optimal group size for pool testing with the given (and interchangeable) infection rate. A chart of this process can be found below:  
 ![](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/058/016/datas/original.PNG)
 
-**Findings**
+**Findings**  
 We found Binary Pooling to be most effective, Linearly Pooling to be moderately effective, and regular Linear Testing to be the least effective. Graphs representing Binary Pooling and Linear Pooling's performance can be seen below. These graphs were produced by running our algorithm on NYC's infection rate (1.8% as of April 26, 2020):  
 
 ![](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/057/260/datas/original.PNG)
