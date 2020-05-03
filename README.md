@@ -1,6 +1,6 @@
 # Speeding COVID-19 Testing via Pooled Test Optimization  
-asd
-##Intro
+
+## Intro
 As of Sunday, April 26, 2020, the most heavily populated city in America suffers from 150,576 cases of COVID-19. New York City, having a population of nearly 19 million, has an infection rate of 1.8%. The need to build fast and efficient testing has grown quickly, and for Hack:Now we have optimized pooled testing in order to speed up COVID-19 testing. Currently, it takes 5000 tests to test 5000 individuals. In our work, amongst a simulated 5000 random people in NYC, our binary pooling strategy has shown results as small as 859 required tests.
 
 ## Background
