@@ -14,7 +14,7 @@ https://med.stanford.edu/news/all-news/2020/04/testing-pooled-samples-to-track-e
 https://www.timesofisrael.com/to-ease-global-virus-test-bottleneck-israeli-scientists-suggest-pooling-samples/
 https://healthcare-in-europe.com/en/news/corona-pool-testing-increases-worldwide-capacities-many-times-over.html
 
-##How it Works
+## How it Works
 
 **Algorithms**  
 Our project implements a modified binary search algorithm, a binomial statistical model, and pooled testing in order to find the optimal size of groups/pools to conserve the most amount of tests. Using our algorithms, we were able to find those in a COVID-19 positive pool much faster.
