@@ -1,4 +1,4 @@
-# Speeding COVID-19 Testing via Pooled Test Optimization
+# Speeding COVID-19 Testing via Pooled Test Optimization  
 
 ##Intro
 As of Sunday, April 26, 2020, the most heavily populated city in America suffers from 150,576 cases of COVID-19. New York City, having a population of nearly 19 million, has an infection rate of 1.8%. The need to build fast and efficient testing has grown quickly, and for Hack:Now we have optimized pooled testing in order to speed up COVID-19 testing. Currently, it takes 5000 tests to test 5000 individuals. In our work, amongst a simulated 5000 random people in NYC, our binary pooling strategy has shown results as small as 859 required tests.
@@ -34,7 +34,7 @@ Given a probability, in this case our infection rate, a binomial model allows us
 
 By using .018 as our probability and looking for 1 success, we find that this corresponds to a pool size of 55. This means that a pool size of 55 most likely means 1 person will have COVID19, the optimal virus-carrying persons for our binary search algorithm. Though, because our binary search algorithm does not perform well with 2 people who have COVID19, we had to run another algorithm to minimize the chances of this happening. 
 
-We perform a loop of simulations of pool size 1 to 55 to find which of these pool sizes will account for low percentages of 2 people with COVID19. Our simulations will average each pool size’s used tests and give us the pool size that used the least. This result will be the most optimal group size for pool testing with the given (and interchangeable) infection rate. A chart of this process can be found below:
+We perform a loop of simulations of pool size 1 to 55 to find which of these pool sizes will account for low percentages of 2 people with COVID19. Our simulations will average each pool size’s used tests and give us the pool size that used the least. This result will be the most optimal group size for pool testing with the given (and interchangeable) infection rate. A chart of this process can be found below:  
 ![](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/058/016/datas/original.PNG)
 
 ## Challenges We Ran Into
