@@ -53,4 +53,4 @@ Moving forward, our Binary Search algorithm can be applied and optimized for any
 We hope that our algorithm can be applied to many COVID-19 impacted communities and that it can be used to rapidly test people in order to mitigate the spread of COVID-19.
 
 ## How to Use the Code
-Simply clone  this GitHub repository. The entry file is `script.py`, which can be run using either a virtual environment (which we have as a folder ./env), as a docker environment (in .devcontainer), or locally using requirements.txt.
+Simply clone  this GitHub repository. The entry file is `script.py`, which can be run using either a virtual environment (which we have as a folder `./env`), as a docker environment (in `.devcontainer`), or locally using `requirements.txt`.
