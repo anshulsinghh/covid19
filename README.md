@@ -1,5 +1,5 @@
 # Speeding COVID-19 Testing via Pooled Test Optimization  
-This was a joint project between Zane Calini and Anshul Singh, and it was submitted to UC Berkeley's Hack:Now. We placed in the top 30 projects out of 223 submssions.  
+This was a joint project between Zane Calini and Anshul Singh, and it was submitted to UC Berkeley's Hack:Now. We placed in the top 30 projects out of 223 project submssions.  
 https://devpost.com/software/covid-19-binary-search-pool-testing-optimization
 
 ## Intro
